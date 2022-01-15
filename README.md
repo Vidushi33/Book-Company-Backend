@@ -6,7 +6,6 @@ In this project we can read, add, update and delete any book as per the requirem
 To open this in VS Code(write the following commands in terminal)-:
   Step1 - Clone the repository 
           Command -> git clone repo_link
-					
   Step2 - Change the directory
           Command -> cd Book-Company-Backend
   Now you can access the code
@@ -15,33 +14,33 @@ To see the working of project, access the deployed API link ->
    Link1 - https://book-company-backend.herokuapp.com/
         (This will check the deployement of backend)
        
-   Link2 -   Get API (To get the data of all the books)
-          
-	  https://book-company-backend.herokuapp.com/books
-          
-	  https://book-company-backend.herokuapp.com/book-isbn/:isbn
-          
-	  https://book-company-backend.herokuapp.com/book-category/:category
+   Link2 -   Get API 
+   
+   	   [To get the data of all the books](https://book-company-backend.herokuapp.com/books)
            
-   Link3 -   Get API (To get the data of all the authors)
+	   [Get book by isbn 12345Three](https://book-company-backend.herokuapp.com/book-isbn/12345Three)
            
-	   https://book-company-backend.herokuapp.com/authors
+	   [Get book by category programming](https://book-company-backend.herokuapp.com/book-category/programming)
            
-	   https://book-company-backend.herokuapp.com/author-id/:id
+   Link3 -   Get API 
+   
+           [To get the data of all the authors](https://book-company-backend.herokuapp.com/authors)
            
-	   https://book-company-backend.herokuapp.com/author-name/:name
+	   [To get the data of author by id 1](https://book-company-backend.herokuapp.com/author-id/1)
            
-	   https://book-company-backend.herokuapp.com/author-isbn/:isbn
+	   [To get the data of author by name shyam](https://book-company-backend.herokuapp.com/author-name/shyam)
            
-   Link4 -   Get API (To get the data of all the publications)
+	   [To get the data of author by isbn 12345Two](https://book-company-backend.herokuapp.com/author-isbn/12345Two)
            
-	   https://book-company-backend.herokuapp.com/publications
+   Link4 -   Get API 
+   	
+	   [To get the data of all the publications](https://book-company-backend.herokuapp.com/publications)
            
-	   https://book-company-backend.herokuapp.com/publication-isbn/:isbn
+	   [To get the data of publication by isbn 12345Two](https://book-company-backend.herokuapp.com/publication-isbn/12345Two)
            
-	   https://book-company-backend.herokuapp.com/publication-name/:name
+	   [To get the data of publication by name Rahul Publications](https://book-company-backend.herokuapp.com/publication-name/Rahul Publications)
            
-	   https://book-company-backend.herokuapp.com/publication-id/:id
+	   [To get the data of publication by id 3](https://book-company-backend.herokuapp.com/publication-id/3)
         
          
    Link5 - Post API (To add a new book, author or publication)
@@ -73,4 +72,30 @@ To see the working of project, access the deployed API link ->
 	   https://book-company-backend.herokuapp.com/author-book-delete/:id/:isbn
          
    Note - To access all the links you can use postman or Thunder client(extention of VS code)
+        - To access the Post , Put and Delete API , you need to give the req body.
+
+        **Books req body** 
+        {
+         ISBN: String,
+         title: String,
+         authors: [Number],
+         language: String,
+         pubDate: String,
+         numOfPage: Number,
+         category: [String],
+         publication: Number,
+        }
            
+        **Authors req body** 
+        {
+                 id: Number,
+                name: String,
+                books: [String],
+        }
+
+        **Publications req body** 
+        {
+                  id: Number,
+                  name: String,
+                  books: [String]
+        }
