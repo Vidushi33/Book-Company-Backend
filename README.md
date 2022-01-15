@@ -20,7 +20,7 @@ To see the working of project, access the deployed API link ->
    Link1 - https://book-company-backend.herokuapp.com/
         (This will check the deployement of backend)
        
-   Link2 -   Get API 
+   Link2 -   Get API(For books)
    
    	   [To get the data of all the books](https://book-company-backend.herokuapp.com/books)
            
@@ -28,7 +28,7 @@ To see the working of project, access the deployed API link ->
            
 	   [Get book by category programming](https://book-company-backend.herokuapp.com/book-category/programming)
            
-   Link3 -   Get API 
+   Link3 -   Get API(For Authors)
    
            [To get the data of all the authors](https://book-company-backend.herokuapp.com/authors)
            
@@ -38,7 +38,7 @@ To see the working of project, access the deployed API link ->
            
 	   [To get the data of author by isbn 12345Two](https://book-company-backend.herokuapp.com/author-isbn/12345Two)
            
-   Link4 -   Get API 
+   Link4 -   Get API(For Publications)
    	
 	   [To get the data of all the publications](https://book-company-backend.herokuapp.com/publications)
            
